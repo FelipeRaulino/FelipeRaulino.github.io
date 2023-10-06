@@ -117,21 +117,42 @@ main > section {
 }
 
 .loader {
+  /* Define a largura do loader */
   width: 48px;
+
+  /* Define a altura do loader*/
   height: 48px;
+
+  /* Define a estilização de borda */
   border: 5px solid #fff;
+
+  /* Define cor de borda inferior  */
   border-bottom-color: #ff3d00;
+
+  /* Define o quão arredondado as bordas do loader serão, no caso 50%, ou seja, um círculo */
   border-radius: 50%;
+
+  /* Definição de elemento como bloco, para conseguir utilizar propriedades de margem */
   display: block;
+
+  /*  */
   box-sizing: border-box;
+
+  /* Mapeamento de animação do loader, nela é definido o nome da animação, o delay, a direçao e a duração*/
   animation: rotation 1s linear infinite;
+
+  /* Margem tanto no eixo X como no eixo Y para desgrudar o elemento da section e colocá-lo no meio */
   margin: 2rem auto;
 }
 
+/* Animação do Loader */
 @keyframes rotation {
+  /* No ínicio da animação o loader terá uma rotação de 0 graus */
   0% {
     transform: rotate(0deg);
   }
+
+  /* No fim da animação o loader fará um giro completo, ou seja, 360 graus */
   100% {
     transform: rotate(360deg);
   }
